@@ -1,0 +1,26 @@
+div{
+    background-color:greenyellow;
+    height: 500px;
+    width: 100%;
+}
+p{
+    color: mediumvioletred;
+    font-weight: bolder;
+}
+.san{
+    background-color: orange;
+    font-style: oblique;
+}
+.bas{
+    font-family: fantasy;
+}
+.highlight{
+    font-weight: 900;
+    color: paleturquoise;
+    font-style: unset;
+}
+#pos{
+    font-family: cursive;
+    column-fill: balance;
+    content: attr();
+}

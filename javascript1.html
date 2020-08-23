@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("Expertzlab")
+        console.log("hello world")
+        var x
+        x = 100
+        console.log(x, typeof x)
+        var name = "sandra"
+        console.log(name, typeof name)
+        var choice = true
+        console.log("choice is", choice, "type of choice is=", typeof choice)
+        var num = 10.456
+        console.log(num, typeof num)
+        var y
+        console.log(typeof y)
+        var num2 = null
+        console.log(num2, typeof num2)
+
+        function add(x, y, z = 20) {
+            var result = x + y + z
+            console.log(result)
+        }
+        add(1, 2)
+        add(45, 67)
+        add(2, 2, 3)
+
+        // function add(x,y,z=20){
+        //     var result=x+y+z
+        //     return result
+        // }
+        // var sum=add(5,7)
+        // console.log("sum of 2nd=", sum)
+        // console.log(add(56,65))
+
+        // function add(x,y,z=40){
+        //     var result=x+y+z
+        // }
+        // var sum=add(5,60)
+        // console.log("sum od 3rd=", sum)
+
+
+        function greetings(msg){
+            return "hello all"+ msg
+        }
+        var result=greetings(" good afternoon")
+        console.log(result)
+
+        var x = 10
+        console.log(x)
+        let z = 50
+        console.log(z)
+        const c = 54569
+        // c=5666
+        console.log(c)
+
+
+
+
+
+    </script>
+
+
+    <button onclick="alert('hey all')">click</button>
+</body>
+
+</html>

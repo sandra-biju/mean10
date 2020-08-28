@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var i, j;
+        for (i = 1; i <= 5; i++) {
+            var s = "";
+            for (j = 1; j <= i; j++) {
+                s += "*";
+            }
+            console.log(s);
+        }
+        document.write('<br/>');
+      
+
+        var i,j;
+        for( i = 5; i >= 1; i--) {
+            var ouput = "";
+            for ( j = i; j >= 1; j--) {
+                ouput += "*"
+            }
+            console.log(ouput);
+        }
+        
+
+        var i, j;
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+
+                document.write('*')
+            }
+            document.write('<br />')
+        }
+        document.write('<br/>');
+
+
+        var i,j;
+        for( i = 5; i >= 1; i--) {
+            var ouput = "";
+            for ( j = i; j >= 1; j--) {
+               document.write("*")
+            }
+            document.write("<br/>")
+        }
+        document.write('<br/>');
+
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j);
+                if (i == j)
+                    continue;
+                else
+                    document.write(' ');
+            }
+            document.write('<br />');
+        }
+        document.write('<br/>');
+
+        var m, n;
+        for (m = 1; m <= 5; m++) {
+            for (n = m; n <= 5; n++) {
+                document.write("" + n + " ");
+            }
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+        var m, n, count = 5;
+        for (m = 1; m <= count; m++) {
+            for (n = 1; n <= m; n++) {
+                document.write("" + m + " ");
+            }
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+    
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var s = Number(1)
+        console.log(s, typeof s)
+
+        // object conversion
+
+        var obj = new Number(s)
+        console.log(obj, typeof obj)
+
+        // string to number conversion
+
+        var i = "528"
+        var int = parseInt(i)
+        console.log(int, typeof int)
+
+        var j = "203.654"
+        var float = parseFloat(j)
+        console.log(float, typeof float)
+
+        // to convert number or boolean to a string
+
+        var num= 90
+        var s=num.toString()
+        console.log(s, typeof s)
+
+
+        let name=new String("sandra")
+        console.log(name, typeof name)
+        let newname=name.toUpperCase()
+        console.log(newname)
+        // name=name.toUpperCase()
+        console.log(name)
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+        console.log(name.indexOf("s"))
+        console.log(name.indexOf("a"))
+        console.log(name.substr())
+        console.log(name.substr(2))
+        console.log(name.substr(2,3))
+        console.log(name.substring(1,3))
+
+        str=" hi hello world "
+        console.log(str, "the length is=",str.length)
+        console.log(str.trim(), "the length is=", str.trim().length)
+
+        let m=new String(" hi hello world ")
+        console.log(m, "the length is=",m.length)
+        console.log(m.trim(), "the length is=", m.trim().length)
+        console.log(m.startsWith(" hi"))
+        console.log(m.endsWith(" world "))
+         
+        // to convert any object to primitive we use valueOf()
+
+        let a=m.valueOf()
+        console.log(a, typeof a)
+
+        let d=new Number(855)
+        let b=d.toString()
+        console.log(b, typeof b)
+
+        // comparing to objects we check its address not its type or value like in primitive
+
+        let i1=new Number(250)
+        let i2=new Number(250)
+        console.log(i1==i2)
+        console.log(i1===i2)
+        i1=i2
+        console.log(i1==i2)
+
+
+
+        
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

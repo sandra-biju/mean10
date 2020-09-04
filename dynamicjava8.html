@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/objectjava9.js"></script>
+    <script>
+        var t=document.createElement("ul")
+        t.setAttribute("id","mylist")
+        t.setAttribute("class","demo")
+        function createList(){
+        var l=document.createElement("li")
+        l.innerHTML=document.getElementById("txt1").value
+        t.appendChild(l)
+        document.getElementById("list").appendChild(t)
+
+        }
+    </script>
+    <input type="text" id="txt1" placeholder="enter something" >
+    <button onclick="createList()">+</button>
+    <div id="list"></div>
+</body>
+</html>

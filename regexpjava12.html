@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="username">
+    <button onclick="check()">Check</button>
+    <input type="text" id="password">
+    <input type="text" name="" id="mob">
+    <input type="email" id="email">
+    <button onclick="submit()">submit</button>
+    <script>
+
+        // match function
+
+        function check() {
+            var x = document.getElementById("username").value
+            var regexp = /\d+/g
+            var b = x.match(regexp)
+            console.log(b)
+            alert(x.match(regexp))
+        }
+
+        // test function
+
+        function submit() {
+            var y = document.getElementById("password").value
+            var regex = /^[a-z]{3}\d{2}$/
+            if (regex.test(y)) {
+                alert("valid username...")
+            }
+            else {
+                alert("invalid username..")
+            }
+
+
+            var z = document.getElementById("mob").value
+            var rege = /^\+91\s(987)|(789)\d{7}$/
+            // var rege=/^\+91\s(987)\d{7}$/
+
+            if (rege.test(z)) {
+                alert("valid number")
+            }
+            else {
+                alert("invalid number")
+            }
+
+            var e = document.getElementById("email").value
+            var reg = /^\w+\@(gmail.com)|(yahoo.com)$/
+            if (reg.test(e)) {
+                alert("valid email")
+            }
+            else {
+                alert("invalid email")
+            }
+
+            var input = "javascript is intrepreted. javascript is object oriented."
+            var regexp = /javascript/g
+            alert(input.match(regexp))
+            var d = input.replace(regexp, "python")
+            console.log(d)
+
+            var msg = "my phone number is 8547647325 and lanline number is (0485-2243573) and fax is (0485-2214568)."
+            var regexp = /^\d+$/
+            var r=msg.match(regexp)
+            console.log(r)
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

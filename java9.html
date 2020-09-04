@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "hi hello,how are you?"
+        var words = str.split(",")
+        console.log(words)
+        for (w of words) {
+            console.log(w)
+        }
+
+
+        var a = "hai,my name,is sandra"
+        var b = a.split(",")
+        console.log(b)
+        for (c of b) {
+            console.log(c)
+        }
+
+
+        var fruits = ["Apple", "Grapes", "Orange"]
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i])
+        }
+
+        for (let index in fruits) {
+            console.log(index)
+            console.log(fruits[index])
+        }
+
+        var names = ["sandra", "basil", "biju", "gibi", "mary", "abraham"]
+        for (j = 0; j < names.length; j++) {
+            console.log(names[j])
+        }
+
+        for(var fam in names){
+            console.log(fam)
+            console.log(names[fam])
+        }
+
+
+        function show(){
+                for(fruit of fruits){
+                    var li=  document.createElement("li")
+                   li.innerText=fruit
+                   var btn=document.createElement("button")
+                   btn.innerText="test"
+                   li.appendChild(btn)
+                   document.getElementById("mylist").appendChild(li)
+                }
+        }
+    </script>
+    <button onclick="show()">click</button>
+    <ul id=mylist></ul>
+</body>
+
+</html>

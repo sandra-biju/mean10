@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // forEach function
+
+        var x=[10,20,30,40,125,111,5,19]
+        x.forEach((y)=>{
+            console.log(y)
+        })
+
+        // map function
+
+        let c=x.map((z)=>{
+           return z**2
+            
+        })
+        console.log(c)
+
+        // filter function
+
+        let a=x.filter((b)=>{
+            if (b%2!=0){
+                return b
+            }
+        })
+        console.log(a)
+
+        // Reduce function from left to right
+
+        let result=x.reduce((o,p)=>{
+            console.log("o: ",o)
+            console.log("p: ",p)
+            return o+p
+        })
+        console.log(result)
+
+        // reduce function from right to left
+
+        let result2=x.reduceRight((m,n)=>{
+            console.log("m: ",m)
+            console.log("n: ",n)
+            return m-n
+        })
+        console.log(result2)
+    </script>
+</body>
+</html>

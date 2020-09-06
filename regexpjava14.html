@@ -65,13 +65,11 @@
             var d = input.replace(regexp, "python")
             console.log(d)
 
-            var msg = "my phone number is 8547647325 and lanline number is (0485-2243573) and fax is (0485-2214568)."
-            var regexp = /^\d+$/
-            var r=msg.match(regexp)
-            console.log(r)
-
+            var msg = "my phone number is 8547647325 and lanline number is (0485-2243573) and fax is (0485-2214568)"
+            var regexp=/\W+\d+\W+\d+\W+/g
+            var d=msg.match(regexp)
+            console.log(d)
         }
-
 
 
 

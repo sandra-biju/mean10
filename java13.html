@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="content" cols="100" rows="30"></textarea>
+    <div>
+        <input type="text" name="" id="search">
+        <button onclick="search()">search</button>
+    </div>
+    <div id="highlight"></div>
+    <script src="js/objectsjava13.js"></script>
+    <script>
+        function search(){
+            let c=document.getElementById("content").value
+            let i=document.getElementById("search").value
+            let regexp=new RegExp(i,"g")
+            document.getElementById("highlight").innerHTML=c.replace(regexp,"<span style='background-color:yellow'> "+i+" </span>")
+        }
+    </script>
+</body>
+
+</html>

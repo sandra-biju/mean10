@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // SELF INVOKING FUNCTION
+
+        (function(a){
+            console.log(a)
+            console.log("This is a self invoking function..")
+        })("Hi")
+
+       
+        function greetings(){
+            console.log("hey all good morning...")
+        }
+        greetings()
+
+        var greetings=function(){
+            console.log("good afternoon all")
+        }
+        greetings()
+        console.log(greetings)
+
+        // Passing an arguments from a function to amother function
+
+        function calculate(f,a,b){
+            var result=f(a,b)
+            console.log(f)
+            console.log("result",result)
+        }
+        function add(x,y){
+            return x+y
+        }
+        function sub(x,y){
+            return x-y
+        }
+        calculate(add,10,20)
+        calculate(sub,60,50)
+
+
+        // we can return from another function (these concepts are mainly used in asynchronous scripting)
+
+        function first(){
+            console.log("first function is called....")
+            return function second(){
+                console.log("second function is called....")
+                return function third(){
+                    console.log("third function is called....")
+                }
+            }
+        }
+        let f1=first()
+        console.log(f1)
+        f1()
+        let f2=f1()
+        console.log(f2)
+        f2()
+
+        // string to object conversion
+
+        var str="2020-09-02"
+        let date=new Date(str)
+        console.log(date, typeof date)
+        
+        let date1=new Date()
+        console.log(date1.getDate())
+        console.log(date1.getMonth())
+        console.log(date1.getFullYear())
+        console.log(date1.getTime())
+        console.log(date1.toLocaleDateString())
+        console.log(date1.toDateString())
+        
+        
+
+
+        
+    </script>
+</body>
+</html>

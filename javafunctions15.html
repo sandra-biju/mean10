@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            name:"amal",
+            age:20
+        }
+        var person={
+            name:"rony",
+            age:22,
+            display:function(message,date){
+                console.log("NAME:",this.name)
+                console.log("AGE:",this.age)
+                console.log("hey",this.name,message,"Date:",date)
+
+            }
+        }
+        person.display.call(obj)
+        
+        person.display.call(obj,"Good mourning",new Date().getDate())
+        person.display.apply(obj,["Good mourning",new Date().getDate()])
+        let f=person.display.bind(obj,"Good night",new Date().getDate())
+        f()
+
+    </script>
+</body>
+</html>

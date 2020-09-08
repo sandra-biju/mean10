@@ -46,7 +46,7 @@ student.display()
 
 console.log(student.average())
 
-
+// object.create() => to inherit the properties from another object and then create a new object
 
 
 let person={name:"joe",age:22,address:"nkjjlj"}
@@ -89,5 +89,3 @@ Object.seal(student2)
 student2.batch=2
 student2.age=30
 console.log(student2)
-
-
